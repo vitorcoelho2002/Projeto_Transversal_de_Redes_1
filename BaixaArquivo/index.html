@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Importação da biblioteca jquery -->
+        <script src="jquery-2.1.4.min.js"></script>
+        <!-- Importação do código javascript do popup -->
+        <script src="popup.js"></script>
+        <!-- Importação da fonte utilizada -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    	<!-- Importação dos ícones do FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="popup.css" type="text/css">
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	</head>
+    <body>
+        <header>
+			<h1>
+                <!-- Ícone file -->
+				<i class="fa fa-file" aria-hidden="true"></i>
+				 Baixa Arquivo
+			</h1>
+			<hr>
+		</header>
+        <!-- Tabela que receberá lista com url e nome do arquivo -->
+        <div id="listContainer">
+            <div id="tableHeader">
+                <div id="headerFilename">URL</div>
+                <div id="headerDescription">Nome do Arquivo</div>
+        </div>
+        <!-- Tabela com checkboxes que receberá lista com url e nome do arquivo -->
+        <div id="listContent">
+            <table id="listTable">
+                <tr><td class="checkbox"></td><td class="url"><span class="part3">Carregando links. (Carregar a página novamente).</span></span></td><td class="Description"></td></tr>
+            </table>
+            </div>
+        </div>
+        <!-- Checkbox que seleciona todos os links da página -->
+        <div id="selectall">
+            <table id="selectall">
+                <th><input type="checkbox" id="toggle_all"></th>
+                <th align=left>Selecionar todos</th>
+            </table>
+        </div>
+        <!-- Botão de download -->
+        <div id="buttons">
+            <!-- Ícone Download -->
+            <i id="downfile" class="fa fa-2x fa-download" aria-hidden="true"></i>
+            <button id="download-btn" disabled><strong>Download (0 arquivos)</strong></button>
+        </div>
+        
+    </body>
+</html>
